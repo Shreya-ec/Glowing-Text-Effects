@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #07252d;
+}
+h2{
+    position: relative;
+    font-size:6rem;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width:100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70em;
+    outline:none;
+    animation: tubelight 5s linear infinite;
+}
+@keyframes tubelight{
+    0%, 18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color:#0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color:#fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    }
+}
+
+h1{
+    margin-top: 23%;
+    font-size:5rem;
+    color:#0e3742;
+}
+h1 span{
+    /* display: table-cell; */
+    margin:0;
+    padding:0;
+    animation: fairylight 2.5s linear infinite;
+    animation-delay: var(--delay);
+}
+/* longer code shortened and made lil easy by adding custom css property inline as style */
+/* h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}h1 span:nth-child(3){
+    animation-delay: 0.50s;
+}h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}h1 span:nth-child(5){
+    animation-delay: 1s;
+}h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}h1 span:nth-child(7){
+    animation-delay: 1.50s;
+}h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}h1 span:nth-child(9){
+    animation-delay: 2s;
+}h1 span:nth-child(10){
+    animation-delay: 2.25s;
+} */
+@keyframes fairylight {
+    0%,95%{
+        color:#fff;
+        filter:blur(2px);
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 160px #00b3ff;
+    }
+    5%,95%{
+        color:#0e3742;
+        filter:blur(0px);
+        text-shadow: none;
+    }
+}
