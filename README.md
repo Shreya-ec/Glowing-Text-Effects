@@ -1,4 +1,4 @@
-# ✨ Glowing Text Effects
+# ✨ Glowing Text Effects - VANILLA CSS
 
 Create captivating glowing text effects using just HTML and CSS! This project showcases glowing text animations inspired by **tubelight** and **fairylight** aesthetics. All effects are crafted using modern CSS animation techniques for smooth and visually appealing transitions.
 
